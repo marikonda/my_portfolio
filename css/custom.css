@@ -1,0 +1,345 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    background-image: url("../img/tokyo.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    animation-name: opening;
+    animation-duration: 4s;
+}
+
+@keyframes opening {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+  
+body {
+margin: 0 auto;
+max-width: 1500px;
+font-family:'Ubuntu', sans-serif;
+background-color: rgb(70, 67, 67);
+}
+
+.navbar {
+    background-color: rgb(65, 63, 63);
+    font-size: 1.2em;
+}
+
+.nav-item a:hover {
+  cursor: pointer;
+  
+}
+
+a {
+color: black;
+}
+
+a:hover {
+color: white;
+}
+
+img {
+margin: 10px auto;
+width: 60%;
+height: 60%;
+border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    img {
+      width: 500px;
+      height: 400px;
+    }
+}
+  
+
+
+.lead {
+    color: #ffff;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #ffff;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.display-2 {
+    font-size: 100px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    color: #ffff;
+    
+}
+
+@keyframes bounce-2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.bounce-2 {
+    animation-name: bounce-2;
+    animation-timing-function: ease;
+}
+
+.about-section {
+    opacity: 0;
+    transition: opacity 5s;
+}
+  
+.about-section.visible {
+    opacity: 1;
+}
+  
+.chevron {
+    font-size: 25px;
+    margin: 0;
+    color: white;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+}
+  
+#chevron {
+    text-decoration: none;
+}
+  
+#chevron:hover {
+    color: white;
+}
+  
+.chev-rotate {
+    transform: rotate(180deg);
+}
+  
+
+.projects-title{
+    padding: 10px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.height-lg {
+    height: 700px;
+}
+  
+.height-sm {
+    height: 500px;
+}
+
+.parallax {
+    background-image: url("../img/night.jpg");
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffff;
+}
+
+.card {
+    margin: 50px auto;
+    border: 2px lightgrey solid;
+    width: 80%;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 4px 4px #888888;
+}
+
+.card-buttons {
+    text-align: center;
+}
+.card-buttons a {
+    transition: letter-spacing 1s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+.card-buttons a:hover {
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+  
+.button {
+    padding: 10px 15px;
+    border: 1px solid #36373E;
+    border-radius: 20px;
+    transition: color 1s ease;
+    transition: background-color 0.5s ease;
+}
+  
+.button:hover {
+    color: white;
+    background-color: rgb(110, 236, 162);
+  }
+
+.skills {
+    color: white;
+    padding: 20px 0px;
+   
+}
+  
+.skills-list {
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .skills-list {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+    }
+}
+
+.skills-section {
+    opacity: 0;
+    transition: opacity 4s;
+}
+  
+.skills-section.visible {
+    opacity: 1;
+}
+  
+
+.skills-list p {
+    text-align: center;
+    color: #8D8D8D;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  
+}
+.skills-list h3 {
+    color: rgb(236, 231, 231);
+  
+}
+  
+.list {
+    width: 200px;
+    margin: 20px auto;
+}
+  
+.contact {
+    color: white;
+    padding-top: 20px;
+    height: 600px;
+    background-color: #36373E;
+}
+  
+.contact-icons {
+    text-align: center;
+    margin: 50px auto;
+    padding-top: 40px;
+}
+
+
+.contact-section {
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+.contact-section.visible {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .contact-icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+    }
+}
+
+.contact-icons img {
+    height: 120px;
+    width: 120px;
+}
+
+.email-button {
+    color: white;
+    border: 2px solid rgb(248, 243, 243);
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 40px auto 0px;
+    transition: letter-spacing 1s ease;
+}
+
+.email-button:hover {
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    
+}
+  
+.back-to-top {
+    color: white;
+    text-align: center;
+    margin: 100px 0;
+    transition: letter-spacing 1s ease;
+}
+  
+.back-to-top:hover {
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.project-1.visible {
+  opacity: 1;
+}
+
+.project-2.visible {
+  opacity: 1;
+}
+
+.project-3.visible {
+  opacity: 1;
+}
+
+.project-4.visible {
+  opacity: 1;
+}
+
+.project-5.visible {
+  opacity: 1;
+}
+
+.project-5 {
+  margin-bottom: 0;
+}
+  
+
+  
